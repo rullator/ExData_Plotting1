@@ -13,7 +13,7 @@ rm(DT) # remove object from environment
 
 
 # create plot2
-png("plot2.png",width = 480, height = 480)
+png("plot2.png",width = 480, height = 480, bg = "transparent")
 plot(x=1:nrow(SUBSET),y=SUBSET$Global_active_power,type="l",ylab="Global Active Power (kilowatts)",xlab="",xaxt="n")
 axis(1, c(1,24*60,48*60), c('Thu', 'Fri', 'Sat')) # ticks after 24 hrs and 48 hrs
 dev.off()

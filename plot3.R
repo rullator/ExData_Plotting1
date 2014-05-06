@@ -13,7 +13,7 @@ rm(DT) # remove object from environment
 
 
 # create plot3
-png("plot3.png",width = 480, height = 480)
+png("plot3.png",width = 480, height = 480, bg = "transparent")
 plot(x=1:nrow(SUBSET),y=SUBSET$Sub_metering_1,type="l",ylab="Energy sub metering",xlab="",xaxt="n")
 axis(1, c(1,24*60,48*60), c('Thu', 'Fri', 'Sat')) # ticks after 24 hrs and 48 hrs
 lines(x=1:nrow(SUBSET),y=SUBSET$Sub_metering_2, type="l", col="red")

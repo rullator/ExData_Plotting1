@@ -13,7 +13,7 @@ rm(DT) # remove object from environment
 
 
 # create plot4
-png("plot4.png",width = 480, height = 480)
+png("plot4.png",width = 480, height = 480, bg = "transparent")
 layout(matrix(c(1,2,3,4), 2, 2, byrow = TRUE))
 # 1st subplot
 plot(x=1:nrow(SUBSET),y=SUBSET$Global_active_power,type="l",ylab="Global Active Power",xlab="",xaxt="n")
